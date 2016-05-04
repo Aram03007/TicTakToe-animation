@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.narek.tictaktoe.MainActivity"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TwoPlayers"
+        android:id="@+id/switch1"
+        android:background="#b3820f"
+        style="@style/Base.TextAppearance.AppCompat.Button"
+        android:checked="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1b6979"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:checked="true"
+            android:id="@+id/eazy"
+            android:text="Eazy"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/normal"
+            android:text="Normal"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/hard"
+            android:text="Hard"/>
+
+    </RadioGroup>
+
+    <com.example.narek.tictaktoe.CrossView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/crossView"
+        android:layout_weight="1.06"
+        android:layout_gravity="right"
+        android:background="#165759"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/text"
+            android:background="#02ff24"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:text="some test text"
+            android:layout_gravity="center"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game"
+            android:id="@+id/button2"
+            android:layout_gravity="center"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
